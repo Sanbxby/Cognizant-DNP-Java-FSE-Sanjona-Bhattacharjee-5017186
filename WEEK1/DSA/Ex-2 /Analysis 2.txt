@@ -9,3 +9,15 @@ Describes the upper bound of an algorithm's time or space complexity in the wors
 Best Case: The minimum time required for an algorithm to complete.
 Average Case: The expected time for an algorithm over all possible inputs.
 Worst Case: The maximum time an algorithm can take.*/
+
+
+/*-Analysis
+Linear Search:
+
+-Time Complexity: O(n)
+Use Case: Suitable for unsorted data or small datasets.
+Binary Search:
+
+-Time Complexity: O(log n)
+Use Case: Requires sorted data suitable for large datasets.
+
