@@ -1,4 +1,4 @@
-Exercise 1: Inventory Management System
+
 
 Understanding The Problem
 Efficiency: They enable quick access, update, and management of large inventories, reducing time complexity.
