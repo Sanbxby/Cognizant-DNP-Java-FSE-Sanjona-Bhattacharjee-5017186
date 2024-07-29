@@ -1,0 +1,17 @@
+/*-Understanding Search Algorithms
+Linear Search:
+ Iterates over each element in a list to find a target value.
+ O(n) for both average and worst-case scenarios.
+Binary Search:
+ Efficiently finds a target value in a sorted list by repeatedly dividing the search interval in half.
+ O(log n) for average and worst-case scenarios.*/
+
+
+/*-Analysis
+Linear Search:
+Time Complexity: O(n) 
+Binary Search:
+Time Complexity: O(log n)
+
+-When to Use Linear Search: Suitable for small or unsorted datasets.
+-When to Use Binary Search: Best for large, sorted datasets due to its logarithmic time complexity.*/
