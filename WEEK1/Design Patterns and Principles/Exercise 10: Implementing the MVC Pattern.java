@@ -1,4 +1,4 @@
-// Step 2: Define Model Class
+
 class Student {
     private String name;
     private String id;
