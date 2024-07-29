@@ -1,4 +1,4 @@
-/*Understanding Sorting Algorithms
+-Understanding Sorting Algorithms
 -Bubble Sort:
 Repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process is repeated until the list is sorted.
 -Insertion Sort:
@@ -6,15 +6,15 @@ Builds the final sorted array one item at a time, inserting each new element int
 -Quick Sort:
  Divides the array into sub-arrays by selecting a pivot element and partitions the other elements into two groups: less than or equal to the pivot and greater than the pivot. Recursively sorts the sub-arrays.
 -Merge Sort:
- Divides the array into halves, recursively sorts them, and then merges the sorted halves.*/
+ Divides the array into halves, recursively sorts them, and then merges the sorted halves.
 
 -Analysis
-/*-Bubble Sort:
+-Bubble Sort:
 Time Complexity: O(n²) for all cases.
 
 -Quick Sort:
 Time Complexity: O(n log n) on average, but can degrade to O(n²) in the worst case if the pivot is poorly chosen.
 
 
-Quick Sort is generally preferred over Bubble Sort due to its superior average-case performance, especially for larger datasets.*/
+Quick Sort is generally preferred over Bubble Sort due to its superior average-case performance, especially for larger datasets.
 
