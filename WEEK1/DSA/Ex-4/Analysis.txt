@@ -1,10 +1,10 @@
-*/-Understanding Array Representation
+-Understanding Array Representation
 Arrays are contiguous blocks of memory where each element is stored at a fixed offset from the start. This allows for fast access to elements using an index.
 Advantages:
 Fast Access
-Efficiency:*/
+Efficiency:
 
-/*-Analysis
+-Analysis
 Add Employee:
 Time Complexity: O(1) 
 -Search Employee:
@@ -15,4 +15,4 @@ Delete Employee:
 -Time Complexity: O(n) 
 -Limitations of Arrays
 Fixed Size.
-Inefficient Insertions,Deletions.*/
+Inefficient Insertions,Deletions.
