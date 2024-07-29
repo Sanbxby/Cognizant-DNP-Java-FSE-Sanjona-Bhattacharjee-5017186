@@ -35,7 +35,7 @@ class Student {
     }
 }
 
-// Step 3: Define View Class
+
 class StudentView {
     public void displayStudentDetails(String studentName, String studentId, String studentGrade) {
         System.out.println("Student Details:");
@@ -45,7 +45,7 @@ class StudentView {
     }
 }
 
-// Step 4: Define Controller Class
+
 class StudentController {
     private Student model;
     private StudentView view;
