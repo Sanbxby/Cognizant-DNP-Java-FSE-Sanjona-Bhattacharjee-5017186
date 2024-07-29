@@ -1,0 +1,13 @@
+/*-Understanding Recursive Algorithms
+ A recursive algorithm solves a problem by solving smaller instances of the same problem. It involves a base case to end recursion and a recursive case to reduce the problem size.
+ Recursion can simplify complex problems, such as computing sequences or traversing data structures, by breaking them into more manageable sub-problems.*/
+
+
+
+/*-Analysis
+Time Complexity:
+ O(n), where n is the number of periods.
+
+Optimization:
+ Store in-process results to avoid redundant calculations
+ For large datasets or many periods, an iterative approach  may be preferred.*/
