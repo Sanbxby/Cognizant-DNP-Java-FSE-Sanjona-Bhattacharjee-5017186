@@ -1,0 +1,11 @@
+/*Understanding the problem
+-Big O Notation:
+
+Describes the upper bound of an algorithm's time or space complexity in the worst-case scenario.
+
+
+-Best, Average, and Worst-Case Scenarios:
+
+Best Case: The minimum time required for an algorithm to complete.
+Average Case: The expected time for an algorithm over all possible inputs.
+Worst Case: The maximum time an algorithm can take.*/
