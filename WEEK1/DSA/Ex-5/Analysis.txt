@@ -1,13 +1,13 @@
-*/-Understanding Linked Lists
+-Understanding Linked Lists
 -Singly Linked List:
  Each node contains data and a reference to the next node.
  Simple structure, efficient for insertions/deletions at the head.
 -Doubly Linked List:
  Each node contains data, a reference to the next node, and a reference to the previous node.
- Advantages: Allows for traversal in both directions.*/
+ Advantages: Allows for traversal in both directions.
 
 
-/*-Analysis
+-Analysis
 Add Task:
 Time Complexity: O(1)
 Search Task:
@@ -19,4 +19,4 @@ Time Complexity: O(n)
 
 -Advantages of Linked Lists over Arrays
 Linked lists can grow and shrink dynamically, unlike arrays with fixed sizes.
-Adding or removing nodes is efficient if done at the head or if the reference to the node is available, as it does not require shifting elements like in arrays.*/
+Adding or removing nodes is efficient if done at the head or if the reference to the node is available, as it does not require shifting elements like in arrays.
