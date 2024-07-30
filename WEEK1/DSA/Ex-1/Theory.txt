@@ -12,3 +12,7 @@ Time Complexity Analysis
 Add Product: O(n) in the worst case because it checks for duplicates by iterating through the entire list.
 Update Product: O(n) because it may need to search through the entire list to find the product.
 Delete Product: O(n) for the same reason as updating it must find the product in the list. 
+
+Discuss how you can minimize this problems.
+Batch operation - Implement batch processing for adding,updating and deleting.
+Caching-Implement caching for frquently accessed products to reduce time
