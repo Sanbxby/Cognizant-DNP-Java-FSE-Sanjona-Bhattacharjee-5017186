@@ -14,13 +14,13 @@ public class LoggingAspect {
 
     private static final Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
 
-    // Advice that logs before method execution
+
     @Before("execution(* com.library.service.*.*(..))")
     public void logBeforeMethod(JoinPoint joinPoint) {
         logger.info("Before method: " + joinPoint.getSignature().getName());
     }
 
-    // Advice that logs after method execution
+    
     @After("execution(* com.library.service.*.*(..))")
     public void logAfterMethod(JoinPoint joinPoint) {
         logger.info("After method: " + joinPoint.getSignature().getName());
