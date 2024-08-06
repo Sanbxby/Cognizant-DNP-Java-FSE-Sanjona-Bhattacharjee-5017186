@@ -1,0 +1,24 @@
+CREATE OR REPLACE PROCEDURE UpdateSalary (
+    p_employee_id IN NUMBER,
+    p_percentage IN NUMBER
+) IS
+    employee_not_found EXCEPTION;
+BEGIN
+    -- Update salary
+    UPDATE Employees
+    SET Salary = Salary + (Salary * p_percentage / 100)
+    WHERE EmployeeID = p_employee_id;
+
+    IF SQL%NOTFOUND THEN
+        RAISE employee_not_found;
+    END IF;
+
+    COMMIT;
+EXCEPTION
+    WHEN employee_not_found THEN
+        DBMS_OUTPUT.PUT_LINE('Error: Employee ID not found.');
+        ROLLBACK;
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
+        ROLLBACK;
+END UpdateSalary;
