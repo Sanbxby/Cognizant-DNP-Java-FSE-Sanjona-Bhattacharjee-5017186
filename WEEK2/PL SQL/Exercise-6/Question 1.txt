@@ -1,0 +1,10 @@
+DECLARE
+    CURSOR c_transactions IS
+        SELECT CustomerID, TransactionDate, Amount, TransactionType
+        FROM Transactions
+        WHERE TransactionDate BETWEEN TRUNC(SYSDATE, 'MM') AND LAST_DAY(SYSDATE);
+BEGIN
+    FOR transaction IN c_transactions LOOP
+        DBMS_OUTPUT.PUT_LINE('Customer ID: ' || transaction.CustomerID || ', Date: ' || TO_CHAR(transaction.TransactionDate, 'DD-MON-YYYY') || ', Amount: ' || transaction.Amount || ', Type: ' || transaction.TransactionType);
+    END LOOP;
+END;

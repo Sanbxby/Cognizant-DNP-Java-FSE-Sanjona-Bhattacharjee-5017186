@@ -1,0 +1,11 @@
+DECLARE
+    CURSOR c_accounts IS
+        SELECT AccountID, Balance FROM Accounts;
+BEGIN
+    FOR account IN c_accounts LOOP
+        UPDATE Accounts
+        SET Balance = Balance - 100
+        WHERE AccountID = account.AccountID;
+    END LOOP;
+    COMMIT;
+END;
