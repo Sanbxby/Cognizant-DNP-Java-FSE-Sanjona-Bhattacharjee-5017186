@@ -1,0 +1,8 @@
+CREATE OR REPLACE FUNCTION CalculateAge (
+    p_dob IN DATE
+) RETURN NUMBER IS
+    v_age NUMBER;
+BEGIN
+    v_age := EXTRACT(YEAR FROM SYSDATE) - EXTRACT(YEAR FROM p_dob);
+    RETURN v_age;
+END CalculateAge;
