@@ -14,9 +14,18 @@ public class CustomerController {
 
     private List<Customer> customers = new ArrayList<>();
 
-    // POST endpoint to create a new customer using JSON request body
     @PostMapping
     public ResponseEntity<Customer> createCustomer(@RequestBody Customer newCustomer) {
+        customers.add(newCustomer);
+        return new ResponseEntity<>(newCustomer, HttpStatus.CREATED);
+    }
+
+    // POST endpoint to process form data for customer registration
+    @PostMapping("/register")
+    public ResponseEntity<Customer> registerCustomer(@RequestParam Long id,
+                                                     @RequestParam String name,
+                                                     @RequestParam String email) {
+        Customer newCustomer = new Customer(id, name, email);
         customers.add(newCustomer);
         return new ResponseEntity<>(newCustomer, HttpStatus.CREATED);
     }
