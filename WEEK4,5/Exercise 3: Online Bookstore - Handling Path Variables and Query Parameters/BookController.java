@@ -16,8 +16,8 @@ public class BookController {
     private List<Book> books = new ArrayList<>();
 
     public BookController() {
-        books.add(new Book(1L, "Effective Java", "Siddharth", "9780134685991", 45.00));
-        books.add(new Book(2L, "Spring in Action", "Seema", "9781617294945", 40.00));
+        books.add(new Book(1L, "Effective Java", "Siddharth", "9680134689991", 45.00));
+        books.add(new Book(2L, "Spring in Action", "Seema", "9081617298945", 40.00));
     }
 
     @GetMapping
