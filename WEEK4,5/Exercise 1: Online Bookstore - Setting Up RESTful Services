@@ -1,0 +1,27 @@
+Steps Involved
+
+Step 1: Using Spring Initializr (via the Web or IDE) configure the project as: 
+Project Metadata:
+Project Name: BookstoreAPI
+Group: com.example.bookstore
+Artifact: BookstoreAPI
+Packaging: Jar
+Java Version: 17 
+
+Step 2: Providing Dependencies:
+Spring Web: For creating RESTful web services.
+Spring Boot DevTools: To provide automatic restarts and other development-time features.
+Lombok: To reduce boilerplate code like getters, setters, and constructors.
+
+What's new in Spring Boot 3?
+-Enhanced Observability:
+Spring Boot 3 introduces enhancements in observability, including better integration with OpenTelemetry and Micrometer, enabling easier monitoring and tracing.
+-Improved Configuration Processing:
+Spring Boot 3 includes improvements in configuration processing, making it easier to work with complex configuration properties.
+-New AOT (Ahead-of-Time) Compilation:
+Spring Boot 3 introduces an AOT engine, which can optimize the application at build time, reducing runtime overhead and improving startup performance.
+
+
+
+
+
